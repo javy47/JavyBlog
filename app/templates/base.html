@@ -1,0 +1,15 @@
+<html>
+    <head>
+        {% if title%}
+            <title>{{ title}} - JavyBlog</title>
+        {% else %}
+            <title> Welcome to JavyBlog</title>
+        {% endif %}
+    </head>
+    <body>
+        <div>JavyBlog: <a href="/index">Home</a></div>
+        <hr>
+        {% block content %}{% endblock %}
+
+    </body>
+</html>
